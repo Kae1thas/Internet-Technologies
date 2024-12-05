@@ -1,13 +1,19 @@
+import '../pages/index.css';
 import { renderCards, createCard } from './cards.js';
+
+// Импортируем изображения через Webpack
+import card1 from '../images/card_1.jpg';
+import card2 from '../images/card_2.jpg';
+import card3 from '../images/card_3.jpg';
 
 // Массив начальных карточек
 const initialCards = [
-    { name: "Архыз", link: "http://127.0.0.1:5500/card_1.jpg" },
-    { name: "Челябинская область", link: "http://127.0.0.1:5500/card_2.jpg" },
-    { name: "Иваново", link: "http://127.0.0.1:5500/card_3.jpg" },
-    { name: "Камчатка", link: "http://127.0.0.1:5500/card_3.jpg" },
-    { name: "Холмогорский район", link: "http://127.0.0.1:5500/card_3.jpg" },
-    { name: "Байкал", link: "http://127.0.0.1:5500/card_3.jpg" }
+    { name: "Архыз", link: card1 },  // Используем импортированные изображения
+    { name: "Челябинская область", link: card2 },
+    { name: "Иваново", link: card3 },
+    { name: "Камчатка", link: card3 },
+    { name: "Холмогорский район", link: card3 },
+    { name: "Байкал", link: card3 }
 ];
 
 // Рендер начальных карточек
